@@ -1,0 +1,725 @@
+2024-03-18 06:33:01 UTC - INFO - "GET /search/ HTTP/1.1" 200 20
+2024-03-18 06:33:08 UTC - INFO - "GET /search/ HTTP/1.1" 200 20
+2024-03-18 06:33:09 UTC - INFO - "GET /search/ HTTP/1.1" 200 20
+2024-03-18 06:33:20 UTC - INFO - "GET /search/ HTTP/1.1" 200 20
+2024-03-18 06:33:21 UTC - INFO - "GET /search/ HTTP/1.1" 200 20
+2024-03-18 06:33:25 UTC - INFO - "GET /admin/app/server/1/change/ HTTP/1.1" 200 9078
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+2024-03-18 06:33:25 UTC - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2024-03-18 06:34:06 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 06:34:07 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:34:08 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 06:34:08 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:34:12 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 48, in get
+    key = key.strip().lowercase()
+AttributeError: 'str' object has no attribute 'lowercase'
+2024-03-18 06:34:12 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91318
+2024-03-18 06:34:14 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 48, in get
+    key = key.strip().lowercase()
+AttributeError: 'str' object has no attribute 'lowercase'
+2024-03-18 06:34:14 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91318
+2024-03-18 06:34:15 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 48, in get
+    key = key.strip().lowercase()
+AttributeError: 'str' object has no attribute 'lowercase'
+2024-03-18 06:34:15 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91318
+2024-03-18 06:34:32 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 06:34:33 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:34:33 UTC - INFO - "GET /search/ HTTP/1.1" 200 68
+2024-03-18 06:34:56 UTC - INFO - "GET /search/ HTTP/1.1" 200 68
+2024-03-18 06:39:59 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:42:30 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 57, in get
+    "username": user.username,
+AttributeError: 'NoneType' object has no attribute 'username'
+2024-03-18 06:42:30 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91695
+2024-03-18 06:42:37 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 57, in get
+    "username": user.username,
+AttributeError: 'NoneType' object has no attribute 'username'
+2024-03-18 06:42:37 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91695
+2024-03-18 06:42:46 UTC - INFO - "POST /user/register/ HTTP/1.1" 201 163
+2024-03-18 06:42:49 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 68, in get
+    return Response({"octoxlabsdata": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch_dsl/search.py", line 344, in __iter__
+    return iter(self.execute())
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch_dsl/search.py", line 838, in execute
+    es.search(index=self._index, body=self.to_dict(), **self._params).body,
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 446, in wrapped
+    return api(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 3836, in search
+    return self.perform_request(  # type: ignore[return-value]
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch/_sync/client/_base.py", line 320, in perform_request
+    raise HTTP_EXCEPTIONS.get(meta.status, ApiError)(
+elasticsearch.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [octoxlabsdata]', octoxlabsdata, index_or_alias)
+2024-03-18 06:42:49 UTC - ERROR - "GET /search/ HTTP/1.1" 500 147565
+2024-03-18 06:45:41 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:45:44 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 68, in get
+    return Response({"octoxlabsdata": serializer.data}, status=status.HTTP_200_OK)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch_dsl/search.py", line 344, in __iter__
+    return iter(self.execute())
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch_dsl/search.py", line 838, in execute
+    es.search(index=self._index, body=self.to_dict(), **self._params).body,
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch/_sync/client/utils.py", line 446, in wrapped
+    return api(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch/_sync/client/__init__.py", line 3836, in search
+    return self.perform_request(  # type: ignore[return-value]
+  File "/usr/local/lib/python3.9/site-packages/elasticsearch/_sync/client/_base.py", line 320, in perform_request
+    raise HTTP_EXCEPTIONS.get(meta.status, ApiError)(
+elasticsearch.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [octoxlabsdata]', octoxlabsdata, index_or_alias)
+2024-03-18 06:45:44 UTC - ERROR - "GET /search/ HTTP/1.1" 500 147569
+2024-03-18 06:47:13 UTC - INFO - "GET /search/ HTTP/1.1" 200 20
+2024-03-18 06:49:56 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:49:56 UTC - INFO - "GET /admin/app/server/1/change/ HTTP/1.1" 302 0
+2024-03-18 06:49:56 UTC - INFO - "GET /admin/login/?next=/admin/app/server/1/change/ HTTP/1.1" 200 4221
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+2024-03-18 06:49:57 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2024-03-18 06:50:01 UTC - INFO - "POST /admin/login/?next=/admin/app/server/1/change/ HTTP/1.1" 302 0
+2024-03-18 06:50:01 UTC - INFO - "GET /admin/app/server/1/change/ HTTP/1.1" 302 0
+2024-03-18 06:50:01 UTC - INFO - "GET /admin/ HTTP/1.1" 200 6352
+2024-03-18 06:50:01 UTC - INFO - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2024-03-18 06:50:01 UTC - INFO - "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+2024-03-18 06:50:01 UTC - INFO - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2024-03-18 06:50:01 UTC - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-03-18 06:50:05 UTC - INFO - "GET /admin/app/server/add/ HTTP/1.1" 200 8803
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11952
+2024-03-18 06:50:05 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-03-18 06:50:05 UTC - INFO - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2024-03-18 06:50:19 UTC - INFO - "POST /admin/app/server/add/ HTTP/1.1" 302 0
+2024-03-18 06:50:19 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 200 8775
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2024-03-18 06:50:19 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2024-03-18 06:50:20 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-03-18 06:50:20 UTC - INFO - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-03-18 06:50:24 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 57, in get
+    "username": user.username,
+AttributeError: 'NoneType' object has no attribute 'username'
+2024-03-18 06:50:24 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91695
+2024-03-18 06:50:32 UTC - INFO - "POST /user/register/ HTTP/1.1" 201 163
+2024-03-18 06:50:35 UTC - INFO - "GET /search/ HTTP/1.1" 200 65
+2024-03-18 06:50:44 UTC - INFO - "GET /search/ HTTP/1.1" 200 65
+2024-03-18 06:51:50 UTC - INFO - /usr/src/djelastic/app/tasks.py changed, reloading.
+2024-03-18 06:51:51 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:51:54 UTC - INFO - /usr/src/djelastic/app/tasks.py changed, reloading.
+2024-03-18 06:51:55 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:53:48 UTC - INFO - "GET /search/ HTTP/1.1" 200 65
+2024-03-18 06:53:55 UTC - INFO - "GET /search/ HTTP/1.1" 200 65
+2024-03-18 06:54:04 UTC - INFO - /usr/src/djelastic/app/tasks.py changed, reloading.
+2024-03-18 06:54:05 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:54:16 UTC - INFO - /usr/src/djelastic/app/tasks.py changed, reloading.
+2024-03-18 06:54:17 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 06:54:23 UTC - INFO - "GET /search/ HTTP/1.1" 200 65
+2024-03-18 07:01:45 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:01:49 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 302 0
+2024-03-18 07:01:49 UTC - INFO - "GET /admin/login/?next=/admin/app/server/ HTTP/1.1" 200 4203
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2024-03-18 07:01:49 UTC - INFO - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2024-03-18 07:01:53 UTC - INFO - "POST /admin/login/?next=/admin/app/server/ HTTP/1.1" 302 0
+2024-03-18 07:01:53 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 200 7415
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2024-03-18 07:01:53 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-03-18 07:01:53 UTC - INFO - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-03-18 07:01:56 UTC - INFO - "GET /admin/app/server/add/ HTTP/1.1" 200 8803
+2024-03-18 07:01:56 UTC - INFO - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2024-03-18 07:01:56 UTC - INFO - "GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+2024-03-18 07:01:56 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:01:56 UTC - INFO - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2024-03-18 07:01:56 UTC - INFO - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11952
+2024-03-18 07:02:03 UTC - INFO - "POST /admin/app/server/add/ HTTP/1.1" 302 0
+2024-03-18 07:02:03 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 200 8775
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2024-03-18 07:02:03 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2024-03-18 07:02:03 UTC - INFO - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-03-18 07:02:09 UTC - INFO - "POST /user/register/ HTTP/1.1" 201 163
+2024-03-18 07:02:15 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 07:02:15 UTC - INFO - "GET /user/ HTTP/1.1" 200 40
+2024-03-18 07:02:30 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 07:02:30 UTC - INFO - "GET /user/ HTTP/1.1" 200 40
+2024-03-18 07:02:30 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 07:02:30 UTC - INFO - "GET /user/ HTTP/1.1" 200 40
+2024-03-18 07:02:42 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 07:02:42 UTC - INFO - "GET /user/ HTTP/1.1" 200 49
+2024-03-18 07:02:54 UTC - INFO - "GET /search/ HTTP/1.1" 200 65
+2024-03-18 07:05:43 UTC - INFO - /usr/src/djelastic/djelastic/__init__.py changed, reloading.
+2024-03-18 07:05:44 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:08:01 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:08:04 UTC - WARNING - Forbidden: /search/
+2024-03-18 07:08:04 UTC - WARNING - "GET /search/?q=natro HTTP/1.1" 403 5221
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+2024-03-18 07:08:04 UTC - INFO - "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+2024-03-18 07:08:08 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 302 0
+2024-03-18 07:08:08 UTC - INFO - "GET /admin/login/?next=/admin/app/server/ HTTP/1.1" 200 4203
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+2024-03-18 07:08:08 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2024-03-18 07:08:11 UTC - INFO - "POST /admin/login/?next=/admin/app/server/ HTTP/1.1" 302 0
+2024-03-18 07:08:11 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 200 7415
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2024-03-18 07:08:12 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-03-18 07:08:12 UTC - INFO - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-03-18 07:08:15 UTC - INFO - "GET /admin/app/server/add/ HTTP/1.1" 200 8803
+2024-03-18 07:08:15 UTC - INFO - "GET /static/admin/css/forms.css HTTP/1.1" 200 8953
+2024-03-18 07:08:15 UTC - INFO - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2024-03-18 07:08:15 UTC - INFO - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11952
+2024-03-18 07:08:15 UTC - INFO - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2024-03-18 07:08:15 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:08:22 UTC - INFO - "POST /admin/app/server/add/ HTTP/1.1" 302 0
+2024-03-18 07:08:22 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 200 8775
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2024-03-18 07:08:22 UTC - INFO - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-03-18 07:08:28 UTC - INFO - "POST /user/register/ HTTP/1.1" 201 163
+2024-03-18 07:08:39 UTC - INFO - "GET /search/ HTTP/1.1" 200 63
+2024-03-18 07:08:43 UTC - INFO - "GET /search/ HTTP/1.1" 200 63
+2024-03-18 07:11:33 UTC - INFO - "GET /search/ HTTP/1.1" 200 63
+2024-03-18 07:20:45 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:21:41 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 302 0
+2024-03-18 07:21:41 UTC - INFO - "GET /admin/login/?next=/admin/app/server/ HTTP/1.1" 200 4203
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2024-03-18 07:21:41 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2024-03-18 07:21:47 UTC - INFO - "POST /admin/login/?next=/admin/app/server/ HTTP/1.1" 302 0
+2024-03-18 07:21:47 UTC - INFO - "GET /admin/app/server/ HTTP/1.1" 200 8569
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2024-03-18 07:21:47 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-03-18 07:21:47 UTC - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-03-18 07:21:57 UTC - INFO - "POST /user/register/ HTTP/1.1" 201 163
+2024-03-18 07:22:07 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:27:58 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:27:59 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:28:00 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:28:00 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:28:01 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:28:02 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:28:02 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:28:03 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:30:57 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:33:00 UTC - ERROR - Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 57, in get
+    "username": user.username,
+AttributeError: 'NoneType' object has no attribute 'username'
+2024-03-18 07:33:00 UTC - ERROR - "GET /search/ HTTP/1.1" 500 91728
+2024-03-18 07:33:57 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:33:58 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:34:17 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:34:18 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:34:20 UTC - WARNING - Not Found: /search/
+2024-03-18 07:34:20 UTC - WARNING - "GET /search/ HTTP/1.1" 404 28
+2024-03-18 07:34:26 UTC - INFO - "POST /user/register/ HTTP/1.1" 201 163
+2024-03-18 07:34:37 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:34:42 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:35:41 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:35:42 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:35:44 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:35:45 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:37:13 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:37:25 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:37:26 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:37:27 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:37:33 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 07:47:46 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:47:47 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:50:01 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:50:02 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:53:57 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:53:58 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:55:42 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:55:42 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:55:48 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:55:48 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 07:58:06 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 07:58:07 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:01:04 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:01:05 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:01:13 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:01:14 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:01:44 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:01:45 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:03:57 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:03:58 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:04:09 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:04:09 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:04:19 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:04:19 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:08 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:07:09 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:07:19 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:07:19 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:21 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:07:21 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:22 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:07:22 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:26 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:07:26 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:30 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:07:30 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:37 UTC - WARNING - Forbidden: /search/
+2024-03-18 08:07:37 UTC - WARNING - "GET /search/ HTTP/1.1" 403 45
+2024-03-18 08:07:55 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:07:56 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:08:35 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:08:36 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:08:40 UTC - WARNING - Unauthorized: /search/
+2024-03-18 08:08:40 UTC - WARNING - "GET /search/ HTTP/1.1" 401 45
+2024-03-18 08:09:50 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:09:50 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:13:11 UTC - WARNING - Unprocessable Entity: /search/
+2024-03-18 08:13:11 UTC - WARNING - "GET /search/ HTTP/1.1" 422 39
+2024-03-18 08:13:21 UTC - WARNING - Unprocessable Entity: /search/
+2024-03-18 08:13:21 UTC - WARNING - "GET /search/ HTTP/1.1" 422 39
+2024-03-18 08:13:47 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:13:47 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:13:50 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 08:14:15 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 08:14:15 UTC - ERROR - Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jws.py", line 268, in _load
+    header = json.loads(header_data)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 146, in get
+    payload = jwt.decode(access_token, settings.SECRET_KEY, algorithms=['HS256'])
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jwt.py", line 151, in decode_complete
+    decoded = api_jws.decode_complete(
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jws.py", line 198, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jws.py", line 270, in _load
+    raise DecodeError(f"Invalid header string: {e}") from e
+jwt.exceptions.DecodeError: Invalid header string: Expecting value: line 1 column 1 (char 0)
+2024-03-18 08:14:15 UTC - ERROR - "GET /user/ HTTP/1.1" 500 128892
+2024-03-18 08:14:20 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 08:14:20 UTC - ERROR - Internal Server Error: /user/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jws.py", line 268, in _load
+    header = json.loads(header_data)
+  File "/usr/local/lib/python3.9/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.9/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.9/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/src/djelastic/app/views.py", line 146, in get
+    payload = jwt.decode(access_token, settings.SECRET_KEY, algorithms=['HS256'])
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jwt.py", line 210, in decode
+    decoded = self.decode_complete(
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jwt.py", line 151, in decode_complete
+    decoded = api_jws.decode_complete(
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jws.py", line 198, in decode_complete
+    payload, signing_input, header, signature = self._load(jwt)
+  File "/usr/local/lib/python3.9/site-packages/jwt/api_jws.py", line 270, in _load
+    raise DecodeError(f"Invalid header string: {e}") from e
+jwt.exceptions.DecodeError: Invalid header string: Expecting value: line 1 column 1 (char 0)
+2024-03-18 08:14:20 UTC - ERROR - "GET /user/ HTTP/1.1" 500 128892
+2024-03-18 08:14:41 UTC - INFO - "GET /user HTTP/1.1" 301 0
+2024-03-18 08:14:41 UTC - INFO - "GET /user/ HTTP/1.1" 200 40
+2024-03-18 08:17:49 UTC - INFO - "GET /admin/auth/user/ HTTP/1.1" 302 0
+2024-03-18 08:17:49 UTC - INFO - "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4201
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2024-03-18 08:17:49 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+2024-03-18 08:17:53 UTC - INFO - "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+2024-03-18 08:17:53 UTC - INFO - "GET /admin/auth/user/ HTTP/1.1" 200 12044
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6584
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2024-03-18 08:17:53 UTC - INFO - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2024-03-18 08:17:53 UTC - INFO - "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2024-03-18 08:33:23 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:33:24 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:33:41 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:33:41 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:35:12 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 08:36:41 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:36:42 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:44:19 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 08:44:21 UTC - WARNING - Unsupported Media Type: /search/
+2024-03-18 08:44:21 UTC - WARNING - "GET /search/ HTTP/1.1" 415 62
+2024-03-18 08:44:27 UTC - WARNING - Unsupported Media Type: /search/
+2024-03-18 08:44:27 UTC - WARNING - "GET /search/ HTTP/1.1" 415 74
+2024-03-18 08:44:32 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 08:44:37 UTC - WARNING - Unsupported Media Type: /search/
+2024-03-18 08:44:37 UTC - WARNING - "GET /search/ HTTP/1.1" 415 61
+2024-03-18 08:44:41 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 08:45:36 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 08:47:41 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:47:41 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:48:15 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:48:15 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:48:32 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:48:33 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:51:19 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:51:20 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:52:03 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:52:04 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:52:13 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:52:14 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:52:58 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:52:58 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:53:00 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:53:01 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:53:03 UTC - INFO - /usr/src/djelastic/app/views.py changed, reloading.
+2024-03-18 08:53:04 UTC - INFO - Watching for file changes with StatReloader
+2024-03-18 08:58:00 UTC - INFO - "GET /search/ HTTP/1.1" 200 64
+2024-03-18 09:09:44 UTC - INFO - "GET /admin/ HTTP/1.1" 302 0
+2024-03-18 09:09:44 UTC - INFO - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18557
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/css/base.css HTTP/1.1" 200 21207
+2024-03-18 09:09:44 UTC - INFO - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
