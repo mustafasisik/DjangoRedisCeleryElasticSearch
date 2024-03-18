@@ -38,6 +38,9 @@ To test the application:
 ## Logging
 Every query made to the application is logged using Celery and Redis. Logging information is stored in `celery.log`.
 
+## Environment Variables
+You can find the required environment variables in the `.env` file.
+
 ## Contributing
 Contributions are welcome! Follow these steps to contribute:
 1. Fork the repository.
